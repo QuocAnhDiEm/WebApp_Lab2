@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+  }
+  
+  /* Header full width*/
+  .header, .footer {
+    background-color: #c9a25d;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1.5em;
+  }
+  
+  .container {
+    display: flex; /*Flexbox container*/
+    width: 900px; /*  Fixed width layout */
+    margin: 0 auto; 
+    background-color: #fff;
+  }
+  
+  /* 3 Columns Flex */
+  .sidebar, .main {
+    padding: 20px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Columns maintain proper proportions */
+  .sidebar-a {
+    flex: 1;
+    background-color: #f5deb3;
+  }
+  .main {
+    flex: 2; 
+    background-color: #fff8dc;
+  }
+  .sidebar-b {
+    flex: 1;
+    background-color: #f5deb3;
+  }
+  
+  /* Footer spans full width */
+  .footer {
+    background-color: #c9a25d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  /* Proper CSS flexbox properties used */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 100%;
+    }
+    .sidebar, .main {
+      width: 100%;
+    }
+  }
+  
